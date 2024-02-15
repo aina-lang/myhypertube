@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%- title %></title>
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/fontawesome/css/all.min.css">
+</head>
+
+<body class="bg-gray-100 ">
+
+  <%- include('../partials/header.ejs') %>
+
+    <main class="flex max-h-screen overflow-hidden">
+      <%- include('../partials/drawer.ejs') %>
+        <div class="p-8 flex-grow w-[90%] overflow-scroll pt-[110px]">
+          <%- body -%>
+        </div>
+    </main>
+    <%- include('../partials/footer.ejs') %>
+      <script src="/js/script.js"></script>
+      <script src="/fontawesome/js/all.min.js"></script>
+</body>
+
+</html>

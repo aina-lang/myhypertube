@@ -1,0 +1,45 @@
+<div class="sidebar bg-indigo-100 text-white w-64  h-screen shadow-md top-0 z-50 overflow-hidden transition-all">
+    <div class="flex w-full  p-3 justify-between ">
+        <a href="https://flowbite.com/" class="flex items-center title-hide">
+            <!-- <img src="https://flowbite.com/docs/images/logo.svg" class="h-8" alt="Flowbite Logo" /> -->
+            <span class="self-center text-2xl text-gray-800 font-semibold whitespace-nowrap dark:text-white">HYPER<span
+                    class="text-indigo-500"> TUBE</span></span>
+        </a>
+        <button class="toggle-btn " onclick="toggleSidebar()"><i
+                class="fa fa-bars  h-[40px] text-indigo-500"></i>
+            </button>
+    </div>
+    <hr class="mb-12">
+
+
+    <div class=" overflow-hidden ">
+        <nav class="w-full flex justify-between p-3 flex-col space-y-4">
+            <a href="#" class="p-3 overflow-x-hidden flex space-x-5 items-center text-indigo-500 hover:bg-indigo-500 hover:text-white transition-all w-full rounded-md">
+                <i class="fa fa-home "></i>
+                <span class="h-[20px]">Accueil</span>
+            </a>
+            <a href="#" class="p-3 overflow-x-hidden flex space-x-5 items-center text-gray-500 hover:bg-indigo-500  hover:text-white transition-all w-full rounded-md">
+                <i class="fa fa-user "></i>
+                <span class="h-[20px]">Profile</span>
+            </a>
+            <a href="#" class="p-3 overflow-x-hidden flex space-x-5 items-center text-gray-500 hover:bg-indigo-500  hover:text-white transition-all w-full rounded-md">
+                <i class="fa fa-download h-[19px]"></i>
+                <span class="h-[20px]">My torrent</span>
+            </a>
+            <a href="#" class="p-3 overflow-hidden flex space-x-5 items-center text-gray-500 hover:bg-indigo-500  hover:text-white transition-all w-full rounded-md">
+                <i class="fa-solid fa-right-from-bracket"></i>
+                <span class="h-[20px]">Se Deconnecter</span>
+            </a>
+        </nav>
+    </div>
+</div>
+
+
+
+<script>
+    function toggleSidebar() {
+        const sidebar = document.querySelector('.sidebar');
+        sidebar.classList.toggle('collapsed');
+        document.querySelector('.title-hide').classList.toggle('hidden');
+    }
+</script>
